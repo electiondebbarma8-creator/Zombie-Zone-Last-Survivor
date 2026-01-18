@@ -13,3 +13,10 @@ gameMap.forEach((row, y) => {
 });
 
 console.log("Player Start:", playerX, playerY);
+import gameMap from "./maps/map.js";
+import { player, initPlayer, handlePlayerMovement } from "./player/player.js";
+
+initPlayer(gameMap);
+handlePlayerMovement(gameMap);
+
+console.log("Game Started");
